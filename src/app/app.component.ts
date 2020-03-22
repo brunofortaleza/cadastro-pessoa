@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cadastro-pessoa';
+  pessoa = null;
+  lista_pessoas = []
+
+  adicionar(){
+    this.lista_pessoas.push(this.pessoa)
+    this.pessoa = null;
+  }
+
 }
