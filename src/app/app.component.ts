@@ -14,4 +14,8 @@ export class AppComponent {
     this.pessoa = null;
   }
 
+  excluir(){
+    this.lista_pessoas.pop();
+  }
+
 }
